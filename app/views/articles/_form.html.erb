@@ -1,0 +1,9 @@
+<div class="container form-control">
+  <%= form_with model: @article do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :content %>
+    <%= f.text_area :content, size: "60x20" %>
+    <%= f.submit %>
+  <% end %>
+</div>
